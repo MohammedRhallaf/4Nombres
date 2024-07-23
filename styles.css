@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url("images/b8.jpeg");
+    background-position:center center;
+	 background-size:cover;
+	
+	 animation-duration:20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* background-color:rgba(0,0,0,0.2); */
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.game-board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-section {
+    width: 45%;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong-position {
+    color: orange;
+}
+
+.incorrect {
+    color: red;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+
+}

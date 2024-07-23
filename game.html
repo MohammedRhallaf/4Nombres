@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrez les chiffres - Jeu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="background-color:rgba(0,0,0,0.9);color: white;">
+        <h1>Découvrez les chiffres</h1>
+        <div class="game-board">
+            <div class="player-section" id="player1Section">
+                <h2 id="player1Name"></h2>
+                <form id="guessForm1" onsubmit="submitGuess(event, 1)" >
+                    <label for="guess1">Entrez votre supposition:</label>
+                    <input type="text" id="guess1" name="guess1" maxlength="4" pattern="\d{4}" required><br><br>
+                    <button type="submit">Deviner</button>
+                </form>
+                <div id="player1Guesses"></div>
+            </div>
+            <div class="player-section" id="player2Section">
+                <h2 id="player2Name"></h2>
+                <form id="guessForm2" onsubmit="submitGuess(event, 2)">
+                    <label for="guess2">Entrez votre supposition:</label>
+                    <input type="text" id="guess2" name="guess2" maxlength="4" pattern="\d{4}" required><br><br>
+                    <button type="submit">Deviner</button>
+                </form>
+                <div id="player2Guesses"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

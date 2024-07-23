@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat - Gagnant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+         body {
+            font-family: 'Arial', sans-serif;
+             background: url('background.jpg') no-repeat center center fixed; 
+             background-size: cover;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: rgb(199, 197, 197);
+            text-align: center;
+            background-image:url("images/b1.jpeg");
+            background-position:center center;
+	        background-size:cover;
+	        animation-duration:20s;
+	        animation-iteration-count: infinite;
+	        animation-timing-function: ease-in-out;
+        }
+       
+</style>
+
+<body>
+    <div class="container" style="background-color:rgba(0,0,0,0.8);color: white;">
+        <h1 class="winner" style="color: green;">Vous êtes le gagnant!</h1>
+        <p id="winner-info"></p>
+        <img src="images/1.jpg" alt="Chat rieur"><br>
+        <button onclick="restartGame()">Recommencer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

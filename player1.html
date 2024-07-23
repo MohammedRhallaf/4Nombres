@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrez les chiffres - Joueur 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"style="background-color:rgba(0,0,0,0.9);color:white;" >
+        <h1>Joueur 1, entrez votre numéro</h1>
+        <form id="player1Form" onsubmit="savePlayer1Number(event)" >
+            <label for="number1">Entrez un numéro à 4 chiffres:</label>
+            <input type="text" id="number1" name="number1" maxlength="4" pattern="\d{4}" required><br><br>
+            <button type="submit">Suivant</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

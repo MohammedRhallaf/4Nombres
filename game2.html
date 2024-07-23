@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Devinez le Numéro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="background-color:rgba(0,0,0,0.9);color: white;">
+        <h1>Jeu de Deviner les Chiffres</h1>
+        <div class="game-board">
+            <div class="player-section" id="playerSection">
+                <h2 id="playerName"></h2>
+                <form id="guessForm" onsubmit="submitGuess2(event)" style="background-color:rgba(0,0,0,0.2);">
+                    <label for="guess">Entrez votre supposition:</label>
+                    <input type="text" id="guess" maxlength="4" pattern="\d{4}" required><br><br>
+                    <button type="submit">Deviner</button>
+                </form>
+                <div id="guesses"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
