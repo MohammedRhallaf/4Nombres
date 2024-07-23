@@ -1,91 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Résultat</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: white;
-            text-align: center;
-        }
-        .result-container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 15px;
-        }
-        .winner {
-            color: #4CAF50;
-        }
-        .loser {
-            color: #F44336;
-        }
-        .result-container img {
-            width: 100px;
-            height: auto;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #333;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #555;
-        }
-    </style>
-</head>
-<body>
-    <div class="result-container">
-        <h2 class="winner">Vous êtes le gagnant!</h2>
-        <p id="winner-info"></p>
-        <img src="laughing-cat.png" alt="Chat rieur">
-        
-        <h2 class="loser">Vous avez perdu</h2>
-        <p id="loser-info"></p>
-        <img src="crying-cat.png" alt="Chat pleureur">
-        
-        <button onclick="restartGame()">Recommencer</button>
-    </div>
 
-    <script>
-        // Récupération des informations du gagnant et du perdant
-        const winnerName = localStorage.getItem('winnerName');
-        const winnerGender = localStorage.getItem('winnerGender');
-        const loserName = localStorage.getItem('loserName');
-        const loserGender = localStorage.getItem('loserGender');
-
-        if (winnerName && winnerGender) {
-            document.getElementById('winner-info').innerHTML = `${winnerName} (${winnerGender})`;
-        } else {
-            document.getElementById('winner-info').innerHTML = 'Information manquante';
-        }
-
-        if (loserName && loserGender) {
-            document.getElementById('loser-info').innerHTML = `${loserName} (${loserGender})`;
-        } else {
-            document.getElementById('loser-info').innerHTML = 'Information manquante';
-        }
-
-        function restartGame() {
-            localStorage.clear();
-            window.location.href = 'index.html';
-        }
-    </script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -178,7 +91,7 @@
 
         function restartGame() {
             localStorage.clear();
-            window.location.href = 'home.html';
+            window.location.href = 'index.html';
         }
     </script>
 </body>

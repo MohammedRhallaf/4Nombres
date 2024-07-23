@@ -1,39 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Découvrez les chiffres - Informations sur les joueurs</title>
+    <title>Jeu de Deviner les Chiffres</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body >
-    <div class="container" style="background-color:rgba(0,0,0,0.4);color:white;">
-        <h1>Informations sur les joueurs</h1>
-        <form id="playerInfoForm" onsubmit="savePlayerInfo(event)" >
-            <div class="form-group">
-                <label for="name1">Nom du Joueur 1:</label>
-                <input type="text" id="name1" name="name1" required  style="background-color:rgba(0,0,0,0.2);color:white;">
-            </div>
-            <div class="form-group">
-                <label for="gender1">Sexe du Joueur 1:</label>
-                <select id="gender1" name="gender1" required  style="background-color:rgba(0,0,0,0.2);color: white;">
-                    <option value="Homme">Homme</option>
-                    <option value="Femme">Femme</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="name2">Nom du Joueur 2:</label>
-                <input type="text" id="name2" name="name2" required style="background-color:rgba(0,0,0,0.2);color:white;">
-            </div>
-            <div class="form-group">
-                <label for="gender2">Sexe du Joueur 2:</label>
-                <select id="gender2" name="gender2" required style="background-color:rgba(0,0,0,0.2);color: white;">
-                    <option value="Homme">Homme</option>
-                    <option value="Femme">Femme</option>
-                </select>
-            </div>
-            <button type="submit">Suivant</button>
-        </form>
+<body>
+    <div class="container"  style="background-color:rgba(0,0,0,0.2);">
+        <h1 style="color: white;">Bienvenue au Jeu de Deviner les Chiffres</h1>
+        <button onclick="playAgainst('robot')" style="background-color:rgba(0,0,0,0.2);">
+            <img src="images/robot.png" alt="Robot" width="35px" height="20px"> Jouer avec le Robot
+        </button>
+        <button style="background-color:rgba(0,0,0,0.2);">
+            <img src="images/stik.png" alt="Friend" width="35px" height="20px"><a  href="home.html">Jouer avec un Ami</a> 
+        </button>
     </div>
     <script src="script.js"></script>
 </body>
