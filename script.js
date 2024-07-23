@@ -100,7 +100,7 @@ function playAgainst(opponent) {
     if (opponent === 'robot') {
         window.location.href = 'robot.html';
     } else {
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     }
 }
 
@@ -184,7 +184,7 @@ function initializeLoserPage2() {
 }
 function restartGame() {
     localStorage.clear();
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
 }
 
 if (window.location.pathname.includes('loser.html')) {
